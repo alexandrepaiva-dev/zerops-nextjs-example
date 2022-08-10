@@ -2,8 +2,8 @@ nextjs:
   build:
     base: [nodejs@14]
     build:
-      - npm i
-      - npm run build
+      - yarn
+      - yarn build
     deploy: [".next", node_modules, package.json]
   run:
-    start: npm start
+    start: yarn start
