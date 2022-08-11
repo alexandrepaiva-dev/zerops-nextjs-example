@@ -1,7 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
+  images: {
+    domains: ['cdn.koeaboa.ie', 'koeaboa.ams3.digitaloceanspaces.com'],
+  },
+  i18n: {
+    locales: ["pt-br"],
+    defaultLocale: "pt-br",
+  },
 }
-
-module.exports = nextConfig
